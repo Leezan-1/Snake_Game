@@ -10,3 +10,6 @@ A python exercise of creating legendary snake game .
 - 'Down' key to move down
 - 'Left' key to move left
 - 'Right' key to move right
+- Create the highest score 
+- My highest score is 54, beat it if you can
+- And finaallly game crashes if you win the game (haha)

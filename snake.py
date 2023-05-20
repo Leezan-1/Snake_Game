@@ -1,6 +1,6 @@
 import turtle as t
 # TODO : Creating snake body
-STARTING_POSTION = ((-6, 0), (0, 0), (6, 0))
+STARTING_POSTION = ((-5, 0), (0, 0), (5, 0))
 DISTANCE = 20
 UP = 90
 DOWN = 270
@@ -49,9 +49,10 @@ class Snake:
     # TODO : Detect Collision with Wall
 
     def collision(self):
+        # checks collision with wall
         if (self.head.xcor() >= 275 or self.head.xcor() <= -275 or self.head.ycor() >= 275 or self.head.ycor() <= -275):
             return False
-        else:
+        else:  # checks collision with tail
             for body in self.snake_body[:len(self.snake_body)-2]:
                 if (self.head.distance(body) <= 10):
                     return False
