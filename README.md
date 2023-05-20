@@ -12,4 +12,4 @@ A python exercise of creating legendary snake game .
 - 'Right' key to move right
 - Create the highest score 
 - My highest score is 54, beat it if you can
-- And finaallly game crashes if you win the game (haha)
+- And finaallly, the game crashes if you win the game (haha)
