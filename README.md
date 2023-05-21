@@ -1,7 +1,7 @@
 # Snake_Game
 A python exercise of creating legendary snake game.
 
-# TO PLAY THE GAME:
+# TO PLAY THE GAME
 - Install Python 3.0 or above
 - Run main.py
 
