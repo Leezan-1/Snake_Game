@@ -39,7 +39,7 @@ def game_start():
     while game_on:
 
         screen.update()
-        time.sleep(speed)     # updats screen every 0.1 ms
+        time.sleep(scorecard.scorespeed)     # updats screen every 0.1 ms
 
         snake.move()
 
@@ -48,17 +48,19 @@ def game_start():
             food.food_refresh(snake.snake_body)
             scorecard.new_score()
             snake.extend()
-            if speed > 0:
-                speed -= 0.002
 
         # BODY / WALL COLLISION DETECTION
-        game_on = snake.collision()
+        if (snake.collision()):
+            snake.reset()
+            scorecard.reset()
 
     # FINAL SCORECARD AFTER GAMEOVER
-    scorecard.gameover()
+    # scorecard.gameover()
 
 
 # calls game_start function on pressing enter
+screen.onkeypress(game_start, 'Return')
+screen.onkeypress(game_start, 'Return')
 screen.onkeypress(game_start, 'Return')
 
 

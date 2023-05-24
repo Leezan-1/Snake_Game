@@ -19,9 +19,8 @@ class Food(Turtle):
 
     def food_refresh(self, snake_body_list=[]):        # creates food in new position
         self.setposition(self.food_position())
-
         for body in snake_body_list:
-            while (body.position() == self.position() and body.distance(self) < 10):
+            while (body.position() == self.position() and body.distance(self) < 20):
                 self.setposition(self.food_position())
                 # this loop prevents food summoning into snake's body for some extent (not perfect)
                 # game crashes if game is won (hehe!)
